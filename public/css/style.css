@@ -1,0 +1,185 @@
+
+body {
+	font-family: Arial;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 80px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+h3 {
+	margin-top: 30px;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+button {
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+input {
+	padding: 6px 8px;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+	font-size: 20px;
+}
+
+#comment-holder>p {
+	margin-top: 0;
+}
+
+#wrapper {
+	width: 1600px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#picture, #politician, #content {
+	position: relative;
+	float: left;
+}
+
+#picture, #content {
+	border: 2px solid black;
+	width: 400px;
+	height: 225px;
+}
+
+#picture {
+	margin-left: 100px;
+}
+
+#politician {
+	margin-top: 80px;
+	max-width: 680px;
+}
+
+#content {
+	background: black;
+	color: white;
+	overflow: auto;
+}
+
+#pols, #curs {
+	position: absolute;
+	bottom: 0;
+}
+
+#pols {
+	left: 25px;
+}
+
+#pols>img, #curs>img {
+	margin-left: 40px;
+}
+
+#curs {
+	right: 25px;
+}
+
+.number {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.comments {
+	position: relative;
+	border: 2px solid black;
+	width: 400px;
+	height: 225px;
+	margin-bottom: -25px;
+	background: white;
+	overflow: auto;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1600px) {
+	#picture, #content {
+		width: 350px;
+		height: 197px;
+		border: 2px solid black;
+		text-align: center;
+	}
+	#picture {
+		margin-left: 60px;
+	}
+	#politician {
+		margin-top: 90px;
+		max-width: 370px;
+	}
+}
+
+@media (max-width: 1200px) {
+  #picture, #content {
+		width: 300px;
+		height: 169px;
+		border: 2px solid black;
+		text-align: center;
+	}
+	#picture {
+		margin-left: 20px;
+	}
+	#politician {
+		margin-top: 80px;
+		max-width: 140px;
+	}
+}
+
+@media (max-width: 768px) {
+  #picture, #content {
+		width: 192px;
+		height: 108px;
+		border: 2px solid black;
+		text-align: center;
+	}
+	#picture {
+		margin-left: 5px;
+	}
+	#politician {
+		margin-top: 60px;
+		max-width: 100px;
+	}
+}
